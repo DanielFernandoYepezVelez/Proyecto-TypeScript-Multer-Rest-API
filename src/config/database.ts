@@ -5,7 +5,7 @@ class StartConnection {
     try {
       await mongoose.connect("mongodb://localhost/photo_gallery_db", {
         useNewUrlParser: true,
-        useFindAndModify: true,
+        useFindAndModify: false,
         useUnifiedTopology: true,
         useCreateIndex: true,
       });
